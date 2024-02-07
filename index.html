@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Welcome to Made 4 Islam, your dedicated platform committed to enlightening and educating individuals about the rich teachings and principles of Islam. Our mission is to serve as a source of knowledge, offering insights into the beauty of Islam."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Made 4 Islam</title>
+    <link rel="icon" type="image/x-icon" href="FavIcon.png" />
+
+    <meta property="og:title" content="Made 4 Islam" />
+    <meta
+      property="og:description"
+      content="Welcome to Made 4 Islam, your dedicated platform committed to enlightening and educating individuals about the rich teachings and principles of Islam. Our mission is to serve as a source of knowledge, offering insights into the beauty of Islam."
+    />
+    <meta property="og:image" content="FavIcon.png" />
+    <!-- Replace "Icon.png" with the path to your website image/icon -->
+    <meta property="og:url" content="https://made4islam.42web.io/" />
+    <!-- Replace with your actual website URL -->
+
+    <style>
+      /* Your existing styles remain unchanged */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Arial", sans-serif;
+        background-color: #333;
+        color: #fff;
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #333;
+      }
+
+      #logo {
+        max-width: 100px;
+        max-height: 100px;
+      }
+
+      nav {
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px;
+      }
+
+      nav a {
+        text-decoration: none;
+        margin-left: 10px;
+        font-size: 18px;
+        border-radius: 20px;
+        padding: 10px 15px;
+        background-color: gold;
+        display: flex; /* Use flexbox */
+        align-items: center; /* Center vertically */
+        justify-content: center; /* Center horizontally */
+        transition: background-color 0.3s ease; /* Smooth transition for background color */
+      }
+
+      nav a:link,
+      nav a:visited {
+        color: #000; /* Set text color to black for normal and visited state */
+      }
+
+      nav a:hover {
+        background-color: #ffcc00; /* Change the background color on hover */
+      }
+
+      main {
+        padding: 40px;
+        text-align: center;
+        background-color: #333;
+      }
+
+      h1 {
+        font-size: 48px; /* Increase the font size for the heading */
+        color: gold;
+        margin-bottom: 20px;
+        opacity: 0; /* Set initial opacity to 0 */
+        animation: fadeIn 1.5s ease-out forwards; /* Apply animation */
+      }
+
+      p {
+        font-size: 24px; /* Increase the font size for the description */
+        line-height: 1.5;
+        margin-bottom: 40px;
+      }
+
+      #about-section {
+        background-color: #333;
+        padding: 40px;
+        color: #fff;
+        text-align: center;
+      }
+
+      #about-section h2 {
+        color: gold; /* Set the text color to gold */
+        font-size: 36px; /* Increase the font size for the "About Us" heading */
+      }
+
+      #bottom-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #333; /* Background color for the bottom buttons */
+        padding: 20px;
+      }
+
+      #bottom-buttons a {
+        text-decoration: none;
+        color: #000; /* Text color set to black */
+        margin: 0 10px;
+        font-size: 18px;
+        border-radius: 20px; /* Round corners for consistency with top buttons */
+        padding: 10px 20px; /* Adjust padding for smaller buttons */
+        background-color: gold; /* Set background color to gold */
+        cursor: pointer; /* Add cursor pointer for better indication */
+        transition: background-color 0.3s ease; /* Smooth transition for background color */
+      }
+
+      #bottom-buttons a:hover {
+        background-color: #ffcc00; /* Change the background color on hover */
+      }
+
+      /* Style for the Main Site button */
+      #main-site-btn {
+        background-color: gold; /* Set background color to gold */
+        color: #000; /* Set text color to black */
+        padding: 12px 24px; /* Adjust padding for the button */
+        border-radius: 20px; /* Round corners for consistency with other buttons */
+        cursor: pointer; /* Add cursor pointer for better indication */
+        transition: background-color 0.3s ease; /* Smooth transition for background color */
+      }
+
+      #main-site-btn:hover {
+        background-color: #ffcc00; /* Change the background color on hover */
+      }
+
+      /* Style for the copyright notice */
+      #copyright {
+        background-color: #333;
+        color: white; /* Set text color to white */
+        text-align: center;
+        padding: 10px;
+      }
+
+      /* Animation for fading in the heading */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Media Queries for responsiveness */
+      @media only screen and (max-width: 600px) {
+        header {
+          padding: 20px 40px; /* Adjusted padding for smaller screens */
+        }
+
+        nav {
+          padding: 20px 40px; /* Adjusted padding for smaller screens */
+          flex-direction: column;
+          gap: 1rem;
+        }
+
+        nav a {
+          font-size: 16px; /* Adjusted font size for smaller screens */
+          padding: 10px 12px; /* Adjusted padding for smaller screens */
+        }
+
+        #bottom-buttons {
+          padding: 20px 40px; /* Adjusted padding for smaller screens */
+          flex-direction: column;
+          gap: 1rem;
+        }
+
+        #bottom-buttons a {
+          font-size: 16px; /* Adjusted font size for smaller screens */
+          padding: 10px 12px; /* Adjusted padding for smaller screens */
+        }
+
+        #main-site-btn {
+          padding: 10px 20px; /* Adjusted padding for smaller screens */
+        }
+
+        #copyright {
+          padding: 10px 40px; /* Adjusted padding for smaller screens */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <img id="logo" src="Icon.png" alt="Logo" />
+      </div>
+      <nav>
+        <a id="main-site-btn" onclick="scrollToAbout()">About Us</a>
+        <a href="/quranmiracles.html">Quran Miracle's</a>
+        <a href="/sunnahs.html">Sunnah's</a>
+        <a href="/nasheeds.html">Nasheed's</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Made 4 Islam</h1>
+      <p>
+        Here to educate and enlighten, offering insights into Quran Miracle's
+        and the practices of Prophet Muhammad ﷺ (Sunnah's). Make sure to check
+        out
+        <a href="/quranmiracles.html" style="color: gold"
+          >Quran Miracle's</a
+        >,
+        <a href="/sunnahs.html" style="color: gold"
+          >Sunnah's</a
+        >, and
+        <a href="/nasheeds.html" style="color: gold"
+          >Nasheed's</a
+        >
+        to learn more about Islam.
+      </p>
+    </main>
+
+    <section id="about-section">
+      <h2>About Us</h2>
+      <p>
+        Welcome to Made 4 Islam, your dedicated platform committed to
+        enlightening and educating individuals about the rich teachings and
+        principles of Islam. Our mission is to serve as a source of knowledge,
+        offering insights into the beauty of Islam. Through careful exploration,
+        we aim to provide a deeper understanding of Quran Miracles and the noble
+        practices of Prophet Muhammad ﷺ, known as Sunnah.
+      </p>
+    </section>
+
+    <div id="bottom-buttons">
+      <a href="/quranmiracles.html">Quran Miracle's</a>
+      <a href="/sunnahs.html">Sunnah's</a>
+      <a href="/nasheeds.html">Nasheed's</a>
+    </div>
+
+    <script>
+      function scrollToAbout() {
+        document
+          .getElementById("about-section")
+          .scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    </script>
+
+    <!-- Copyright notice -->
+    <div id="copyright">&copy; 2024 Made 4 Islam. All rights reserved.</div>
+  </body>
+</html>
